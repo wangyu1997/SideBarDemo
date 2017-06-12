@@ -14,6 +14,10 @@
 		8852C3EE1EEE5A3700C01683 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8852C3EC1EEE5A3700C01683 /* LaunchScreen.storyboard */; };
 		8852C3F91EEE5A3700C01683 /* sideBarDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852C3F81EEE5A3700C01683 /* sideBarDemoTests.swift */; };
 		8852C4041EEE5A3700C01683 /* sideBarDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852C4031EEE5A3700C01683 /* sideBarDemoUITests.swift */; };
+		8852C4131EEE5E6B00C01683 /* LeftVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852C4121EEE5E6B00C01683 /* LeftVC.swift */; };
+		8852C4151EEE621A00C01683 /* DrawerMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852C4141EEE621A00C01683 /* DrawerMainVC.swift */; };
+		8852C4181EEE62C200C01683 /* ConstantUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852C4171EEE62C200C01683 /* ConstantUtil.swift */; };
+		8852C4241EEEC6FF00C01683 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8852C4231EEEC6FF00C01683 /* PopVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		8852C3FF1EEE5A3700C01683 /* sideBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sideBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8852C4031EEE5A3700C01683 /* sideBarDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideBarDemoUITests.swift; sourceTree = "<group>"; };
 		8852C4051EEE5A3700C01683 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8852C4121EEE5E6B00C01683 /* LeftVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftVC.swift; sourceTree = "<group>"; };
+		8852C4141EEE621A00C01683 /* DrawerMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawerMainVC.swift; sourceTree = "<group>"; };
+		8852C4171EEE62C200C01683 /* ConstantUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantUtil.swift; sourceTree = "<group>"; };
+		8852C4231EEEC6FF00C01683 /* PopVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,8 @@
 				8852C3E31EEE5A3700C01683 /* AppDelegate.swift */,
 				8852C3E51EEE5A3700C01683 /* ViewController.swift */,
 				8852C3E71EEE5A3700C01683 /* Main.storyboard */,
+				8852C4111EEE5E2E00C01683 /* ViewController */,
+				8852C4161EEE629E00C01683 /* Utils */,
 				8852C3EA1EEE5A3700C01683 /* Assets.xcassets */,
 				8852C3EC1EEE5A3700C01683 /* LaunchScreen.storyboard */,
 				8852C3EF1EEE5A3700C01683 /* Info.plist */,
@@ -123,6 +133,24 @@
 				8852C4051EEE5A3700C01683 /* Info.plist */,
 			);
 			path = sideBarDemoUITests;
+			sourceTree = "<group>";
+		};
+		8852C4111EEE5E2E00C01683 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8852C4231EEEC6FF00C01683 /* PopVC.swift */,
+				8852C4121EEE5E6B00C01683 /* LeftVC.swift */,
+				8852C4141EEE621A00C01683 /* DrawerMainVC.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		8852C4161EEE629E00C01683 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8852C4171EEE62C200C01683 /* ConstantUtil.swift */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8852C4241EEEC6FF00C01683 /* PopVC.swift in Sources */,
+				8852C4151EEE621A00C01683 /* DrawerMainVC.swift in Sources */,
 				8852C3E61EEE5A3700C01683 /* ViewController.swift in Sources */,
 				8852C3E41EEE5A3700C01683 /* AppDelegate.swift in Sources */,
+				8852C4181EEE62C200C01683 /* ConstantUtil.swift in Sources */,
+				8852C4131EEE5E6B00C01683 /* LeftVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +539,7 @@
 				8852C40A1EEE5A3700C01683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8852C40B1EEE5A3700C01683 /* Build configuration list for PBXNativeTarget "sideBarDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +548,7 @@
 				8852C40D1EEE5A3700C01683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8852C40E1EEE5A3700C01683 /* Build configuration list for PBXNativeTarget "sideBarDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +557,7 @@
 				8852C4101EEE5A3700C01683 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
